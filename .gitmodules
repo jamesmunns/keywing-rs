@@ -4,3 +4,6 @@
 [submodule "nrf-hal"]
 	path = nrf-hal
 	url = git@github.com:jamesmunns/nrf-hal.git
+[submodule "bbq10kbd"]
+	path = bbq10kbd
+	url = https://github.com/jamesmunns/bbq10kbd

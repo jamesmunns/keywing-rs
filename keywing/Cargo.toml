@@ -17,6 +17,10 @@ embedded-graphics = "0.6.2"
 version = "0.3.0"
 path = "../ili9341-rs"
 
+[dependencies.bbq10kbd]
+version = "0.1.0"
+path = "../bbq10kbd"
+
 [dependencies.nrf52840-hal]
 version = "0.10.0"
 features = ["rt"]

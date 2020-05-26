@@ -26,6 +26,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "bbq10kbd"
+version = "0.1.0"
+dependencies = [
+ "embedded-hal 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "byteorder"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -285,6 +292,7 @@ dependencies = [
 name = "tiny-nrf52"
 version = "0.1.0"
 dependencies = [
+ "bbq10kbd 0.1.0",
  "cortex-m 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "cortex-m-rt 0.6.10 (registry+https://github.com/rust-lang/crates.io-index)",
  "embedded-graphics 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
