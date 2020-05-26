@@ -1,0 +1,6 @@
+[submodule "ili9341-rs"]
+	path = ili9341-rs
+	url = git@github.com:jamesmunns/ili9341-rs.git
+[submodule "nrf-hal"]
+	path = nrf-hal
+	url = git@github.com:jamesmunns/nrf-hal.git
