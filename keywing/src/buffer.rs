@@ -1,12 +1,10 @@
 use embedded_graphics::{
     drawable::Pixel,
-    geometry::{Point, Size},
+    geometry::Size,
     pixelcolor::{
         raw::{RawData, RawU16},
         Rgb565,
     },
-    primitives::Rectangle,
-    style::{PrimitiveStyle, Styled},
     DrawTarget,
 };
 
@@ -17,7 +15,10 @@ pub struct FrameBuffer<'a> {
 
 impl<'a> FrameBuffer<'a> {
     pub fn new(raw: &'a mut [[u16; 320]; 240]) -> Self {
-        Self { buf: raw, dirty: false }
+        Self {
+            buf: raw,
+            dirty: false,
+        }
     }
 
     pub fn inner(&mut self) -> Option<&[u16]> {
